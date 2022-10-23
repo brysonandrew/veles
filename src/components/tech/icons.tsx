@@ -1,5 +1,3 @@
-import * as React from "react"
-
 export const ICON_TECH = {
   'React Native + Expo': (
     <svg height="18" width="18" viewBox="0 0 29 25">

@@ -1,4 +1,5 @@
 import { Home } from "@components/home";
+import { Links } from "@components/links";
 import { Tech } from "@components/tech";
 import { Timeline } from "@components/timeline";
 import styled from "@emotion/styled";
@@ -23,6 +24,9 @@ export const Index = () => (
         </div>
         <div className="p-2">
           <Timeline />
+        </div>
+        <div className="p-2">
+          <Links />
         </div>
       </div>
     </Mid>

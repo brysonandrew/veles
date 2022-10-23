@@ -1,0 +1,9 @@
+{
+  "name": "veles",
+  "version": "1.0.0",
+  "description": "home",
+  "main": "index.js",
+  "repository": "git@github.com:brysonandrew/veles.git",
+  "author": "Andrew Bryson <andrewbryson12@gmail.com>",
+  "license": "MIT"
+}

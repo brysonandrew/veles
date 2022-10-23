@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "composite": true,
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "es2020",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/**/*.json",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "files": ["tailwind.config-colors.json"],
+  "extends": "./tsconfig.paths.json"
+}

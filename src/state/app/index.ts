@@ -5,10 +5,16 @@ export const reducer = (
   { type, value }: TReducerAction
 ) => {
   switch (type) {
-    case "isLoading": {
+    case "threshold-reached": {
       return {
         ...state,
-        isLoading: value,
+        isThreshold: true,
+      };
+    }
+    case "threshold-lost": {
+      return {
+        ...state,
+        isThreshold: false,
       };
     }
     default: {

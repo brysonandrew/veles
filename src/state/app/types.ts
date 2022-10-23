@@ -11,23 +11,20 @@ export type TContext = TState & {
 
 export type TAction =
   | {
-      type: "isLoading";
-      value: boolean;
+      type: "threshold-reached";
+      value: null;
     }
-  ;
+  | {
+      type: "threshold-lost";
+      value: null;
+    };
 
 export type TState = {
-  isLoading:  boolean;
- 
+  isThreshold: boolean;
 };
 
 export type TActionType = null;
 export type TActionValue = any;
-
-export type TKeyValuePair = [
-  key: TActionType,
-  value: TActionValue
-];
 
 export type TDispatch = Dispatch<TAction>;
 export type TReducer = Reducer<TState, TAction>;

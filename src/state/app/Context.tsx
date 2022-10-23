@@ -7,7 +7,6 @@ import type { TAction, TContext } from "./types";
 
 export const Context = createContext<TContext>({
   ...STATE,
-  log: (message: string) => null,
   dispatch: (_: TAction) => null,
 } as any);
 

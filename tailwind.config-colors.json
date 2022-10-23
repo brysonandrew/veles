@@ -1,4 +1,5 @@
 {
+  
   "red": "#D32F2F",
   "blue": "#1fb6ff",
   "blue-dark": "#0073e9",
@@ -10,7 +11,7 @@
   "yellow": "#ffc82c",
   "black-dark": "#000",
   "black": "#111",
-  "black-light": "#1e1e1e",
+  "black-light": "#161616",
   "black-lighter": "#222",
   "black-lightest": "#2e2e2e",
   "gray-dark": "#333",

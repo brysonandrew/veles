@@ -5,10 +5,8 @@ import { ITEMS, TItem } from "./constants";
 import { Content } from "./Content";
 import { Item } from "./Item";
 
-const Root = styled.div``;
-
 export const Timeline = () => (
-  <Root className="p-4">
+  <>
     <Sub>Recent projects - </Sub>
     <div className="py-2" />
     <ul>
@@ -21,5 +19,5 @@ export const Timeline = () => (
         </Fragment>
       ))}
     </ul>
-  </Root>
+  </>
 );

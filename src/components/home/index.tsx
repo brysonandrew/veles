@@ -4,40 +4,23 @@ import { Header } from "./Header";
 import { Pic } from "./Pic";
 import { Sub } from "./Sub";
 
-const Title = styled.h1``;
+const Root = styled.div`
+  max-width: 480px;
+`;
 
-const Image = styled.image`
-  filter: url(#filter);
-  animation: 6s my-animation alternate infinite;
-
-  @keyframes my-animation {
-    0% {
-      filter: grayscale(100%);
-    }
-    19% {
-      filter: url(#filter);
-    }
-    20% {
-      filter: url(#filter-2);
-    }
-    21% {
-      filter: url(#filter-3);
-    }
-    94% {
-      filter: grayscale(100%);
-    }
-  }
+const Footer = styled.footer`
+  max-width: 480px;
 `;
 
 export const Home = () => (
-  <div>
+  <Root className="relative w-full">
     <Header />
-    <div className="py-10" />
-    <div className="flex">
-      <Sub />
-      <div className="py-6" />
-      <Pic />
-    </div>
-    <div className="py-14" />
-  </div>
+    <div className="py-4"/>
+    <Root className="relative">
+      <Footer className="fixed w-full top-16 left-1/2 -translate-x-1/2">
+        <Sub />
+        <Pic />
+      </Footer>
+    </Root>
+  </Root>
 );

@@ -5,10 +5,17 @@ import { TItem } from "./constants";
 const Root = styled.a``;
 
 export const Content: FC<TItem> = ({
+  icon,
   title,
-  href
+  href,
 }) => (
-  <Root href={href} target="_blank">
+  <Root
+    className="flex items-center"
+    href={href}
+    target="_blank"
+  >
+    {icon}
+    <div className="p-1" />
     {title}
   </Root>
 );

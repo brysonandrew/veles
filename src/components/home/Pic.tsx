@@ -6,7 +6,10 @@ import {
 } from "framer-motion";
 import { GlitchFilter } from "./GlitchFilter";
 
-const Root = styled(motion.div)``;
+const Root = styled(motion.div)`
+  max-width: 480px;
+
+`;
 
 const Image = styled.image`
   filter: url(#filter);
@@ -39,14 +42,14 @@ export const Pic = () => {
   return (
     <Root
       style={{ opacity, scale }}
-      className="fixed top-12 -left-6 flex flex-col items-center opacity-40"
+      className="relative top-0 left-4 opacity-40"
     >
       <GlitchFilter width="294" height="268">
         <Image
           x="0%"
           y="0%"
-          width="294"
-          height="268"
+          width="254"
+          height="248"
           preserveAspectRatio="xMidYMid slice"
           xlinkHref="/headandshoulders.png"
         />

@@ -15,9 +15,9 @@ export const Sub = () => {
   return (
     <Root
       style={{ opacity, scale }}
-      className="fixed bg-black-dark w-full"
+      className="absolute -right-2 bg-black-dark w-full z-20"
     >
-      <div className="absolute top-0 right-4 w-5/12 h-1/2">
+      <div className="absolute top-4 right-4 w-5/12 h-1/2">
         <p className="relative --panel pl-4 pr-2 pt-1 pb-2 w-full rounded-md">
           Hi, my name is Andrew and I make web apps.
           {/* <div className="absolute left-0 top-0 h-full w-px bg-green" /> */}

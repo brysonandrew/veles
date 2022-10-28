@@ -1,6 +1,3 @@
-import { React } from "@icons/React";
-import { Typescript } from "@icons/Typescript";
-
 export type TItem = {
   title: string;
   href: string;
@@ -10,7 +7,7 @@ export type TItem = {
 export const ITEMS: TItem[] = [
   {
     title: "Github",
-    href: "https://reactjs.org/",
+    href: "https://github.com/brysonandrew",
     icon: (
       <svg
         width="24"
@@ -24,7 +21,7 @@ export const ITEMS: TItem[] = [
   },
   {
     title: "Codepen",
-    href: "https://reactjs.org/",
+    href: "https://codepen.io/codebro/",
     icon: (
       <svg
         width="24"
@@ -38,7 +35,7 @@ export const ITEMS: TItem[] = [
   },
   {
     title: "Codewars",
-    href: "https://www.typescriptlang.org/",
+    href: "https://www.codewars.com/users/brysonandrew/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +68,7 @@ export const ITEMS: TItem[] = [
   },
   {
     title: "Youtube",
-    href: "https://www.typescriptlang.org/",
+    href: "https://www.youtube.com/channel/UCF1SvsAZTJL4Bw9qj0hdNLA",
     icon: (
       <svg
         width="24"
@@ -80,20 +77,6 @@ export const ITEMS: TItem[] = [
         fill="#FF0000"
       >
         <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Medium",
-    href: "https://www.typescriptlang.org/",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path d="M2.846 6.887a.928.928 0 00-.303-.784l-2.24-2.7V3h6.958l5.378 11.795L17.367 3H24v.403L22.084 5.24a.561.561 0 00-.213.538v13.498a.56.56 0 00.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537V8.321l-5.389 13.688h-.728L4.28 8.321v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404H0v-.404l2.521-3.058c.27-.279.39-.67.325-1.052V6.887z" />
       </svg>
     ),
   },

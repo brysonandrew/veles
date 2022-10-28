@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import { useContext } from "@state/app/Context";
 import { Header } from "./Header";
-import { Pic } from "./Pic";
+import { Pic } from "./pic-I/Pic";
 import { Sub } from "./Sub";
 
 const Root = styled.div`
@@ -15,9 +14,9 @@ const Footer = styled.footer`
 export const Home = () => (
   <Root className="relative w-full">
     <Header />
-    <div className="py-4"/>
+    <div className="py-4" />
     <Root className="relative">
-      <Footer className="fixed w-full top-16 left-1/2 -translate-x-1/2">
+      <Footer className="fixed w-full top-12 left-1/2 -translate-x-1/2">
         <Sub />
         <Pic />
       </Footer>

@@ -1,4 +1,9 @@
 import { FC, SVGAttributes } from "react";
+import {
+  GLITCH_FILTER_I_I,
+  GLITCH_FILTER_I_II,
+  GLITCH_FILTER_I_III,
+} from "@constants/keys";
 
 const OFFSET = 0.2;
 const MORPH_RADIUS = 2;
@@ -10,14 +15,10 @@ export const GlitchFilter: FC<TProps> = ({
   children,
   ...props
 }) => (
-  <svg
-    className="Playground__svg"
-    viewBox="0 0 294 268"
-    {...props}
-  >
+  <svg viewBox="0 0 294 268" {...props}>
     <defs>
       <filter
-        id="filter"
+        id={GLITCH_FILTER_I_I}
         x={`-${OFFSET}%`}
         y={`-${OFFSET}%`}
         width={`${100 + OFFSET}%`}
@@ -45,7 +46,7 @@ export const GlitchFilter: FC<TProps> = ({
         />
       </filter>
       <filter
-        id="filter-2"
+        id={GLITCH_FILTER_I_II}
         x={`-${OFFSET}%`}
         y={`-${OFFSET}%`}
         width={`${100 + OFFSET}%`}
@@ -60,7 +61,6 @@ export const GlitchFilter: FC<TProps> = ({
           values="0.10"
           result="grey"
         />
-
         <feMorphology
           operator="dilate"
           radius={`${MORPH_RADIUS} 0`}
@@ -73,7 +73,7 @@ export const GlitchFilter: FC<TProps> = ({
         />
       </filter>
       <filter
-        id="filter-3"
+        id={GLITCH_FILTER_I_III}
         x={`-${OFFSET}%`}
         y={`-${OFFSET}%`}
         width={`${100 + OFFSET}%`}

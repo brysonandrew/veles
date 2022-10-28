@@ -8,7 +8,6 @@ import { Source } from "./source";
 
 type TProps = Partial<RouterProps> & {
   history: History;
-  children: JSX.Element;
 };
 export const Router: FC<TProps> = ({
   history,

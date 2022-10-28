@@ -12,9 +12,7 @@ export const App = () => {
     <Provider>
       <MotionConfig {...MOTION_CONFIG}>
         <Boundary>
-          <Router history={history}>
-            <Source />
-          </Router>
+          <Router history={history}/>
         </Boundary>
       </MotionConfig>
     </Provider>
